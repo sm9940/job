@@ -1,0 +1,23 @@
+{
+   "posts": [
+      { "id": "1", "title": "a title", "views": 100 },
+      { "id": "2", "title": "another title", "views": 100 }
+   ],
+   "comments": [
+      { "id": "1", "title": "a comment about post 1", "postId": "1" },
+      { "id": "2", "title": "a comment about post 2", "postId": "2" }
+   ],
+   "profile": [
+      {
+         "name": "typicode"
+      }
+   ],
+   "todos": [
+      {
+         "userId": 1,
+         "id": 1,
+         "title": "delectus aut autem",
+         "completed": false
+      }
+   ]
+}

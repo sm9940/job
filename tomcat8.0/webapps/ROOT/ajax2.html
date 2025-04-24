@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Hello Ajax</title>
+      <script>
+         var ajax = {}
+         ajax.XhrHandler = function () {
+            this.msgXhr = this.getXMLHttpRequest()
+            this.msgTarget = null
+            this.msgParams = null
+            this.msgMethod = null
+            this.msgFunc = null
+         }
+         ajax.XhrHandler.prototype = {
+            getXMLHttpRequest: function () {},
+            send: function (paramTarget, paramParams, paramMethod, paramFunc) {
+               if (this.msgXhr == null) {
+                  return false
+               }
+               this.msgTarget = paramTarget
+               this.msgParams = paramParams
+               this.msgMethod = paramMethod
+               this.msgFunc = paramFunc
+               if (this.msgMethod != 'POST' && this.msgMethod != 'GET') {
+                  this.msgMethod = 'GET'
+               }
+               var szSendUrl = null
+               var szSendParams = null
+
+               if (this.msgMethod == 'GET') {
+                  szSendParams = this.msgTarget
+                  if (this.msgParams != null) {
+                     if (this.msgParams != '') {
+                        szSendParams += '?' + encodeURIComponent(this.msgParams)
+                     } else {
+                        szSendUrl = this.msgTarget
+                        szSendParams = this.msgParams
+                     }
+                  }
+               }
+               this.msgXhr.open(this.msgMethod, szSendUrl, true)
+               this.msgXhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+               var request = this
+               this.msgXhr.onreadystatechange = function () {
+                  request.onStateChange()
+               }
+               this.msgXhr.send(szSendParams)
+               return true
+            },
+
+            onStateChange: function () {
+               if (this.msgXhr.readyState == 4) {
+                  var data = null
+                  var status = this.msgXhr.status
+                  if (status == 200) {
+                     data = this.msgXhr.responseText
+                  }
+                  var json_data = { result: status, data: data }
+                  this.msgFunc(json_data)
+               }
+            },
+            getXMLHttpRequest: function () {
+               if (window.ActiveXObject) {
+                  var objectNames = [
+                     'MSXML2.XMLHTTP.5.0',
+                     'MSXML2.XMLHTTP.4.0',
+                     'MSXML2.XMLHTTP.3.0',
+                     'MSXML2.XMLHTTP',
+                     'Microsoft.XMLHTTP',
+                  ]
+                  for (var i = 0; i < objectNames.length; i++) {
+                     try {
+                        return new ActiveXObject(objectNames[i])
+                        break
+                     } catch (e) {}
+                  }
+                  return null
+               } else if (window.XMLHttpRequest) {
+                  try {
+                     return new XMLHttpRequest()
+                  } catch (e) {
+                     return null
+                  }
+               }
+               return null
+            },
+         }
+         var xhr = new ajax.XhrHandler()
+         function doConnect(url) {
+            xhr.send(url, '', 'GET', cbConnect)
+         }
+         function cbConnect(req) {
+            if (req.result == 200) {
+               alert(req.data)
+            } else {
+               alert('결과: ' + req.result)
+            }
+         }
+      </script>
+   </head>
+   <body>
+      <table border="1" cellpadding="5">
+         <tr align="center">
+            <td><input type="button" value="enc.txt" onclick="doConnect('http')" /></td>
+            <td><input type="button" value="enc2.txt" onclick="doConnect('enc2.txt')" /></td>
+            <td><input type="button" value="enc.jsp" onclick="doConnect('enc.jsp')" /></td>
+            <td><input type="button" value="enc2.jsp" onclick="doConnect('enc2.jsp')" /></td>
+         </tr>
+         <tr align="center">
+            <td>UTF-8</td>
+            <td>EUC-KR</td>
+            <td>UTF-8</td>
+            <td>EUC-KR</td>
+         </tr>
+      </table>
+   </body>
+</html>

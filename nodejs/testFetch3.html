@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         fetch('/posts', {
+            method: 'POST',
+            headers: {
+               'Content-Type': 'application',
+            },
+            body: JSON.stringify({
+               id: '1',
+               title: 'a title',
+               views: 100,
+            }),
+         }).then((response) => response.json())
+      </script>
+   </body>
+</html>

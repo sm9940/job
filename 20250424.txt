@@ -1,0 +1,4 @@
+node <- Web C/S
+
+npm init은 이름 설정
+컴파일 언어 : app => 1. project 2. package  3. class or function

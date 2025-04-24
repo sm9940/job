@@ -1,0 +1,1028 @@
+22-Apr-2025 14:46:13.508 심각 [http-nio-8080-exec-19] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+The method print(boolean) in the type JspWriter is not applicable for the arguments ()
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 3 in the jsp file: /enc2.jsp
+Syntax error on tokens, delete these tokens
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+6:   "completed": false
+
+
+An error occurred at line: [120] in the generated java file: [C:\Users\hi\Desktop\job\tomcat8.0\work\Catalina\localhost\ROOT\org\apache\jsp\enc2_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+The method print(boolean) in the type JspWriter is not applicable for the arguments ()
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 3 in the jsp file: /enc2.jsp
+Syntax error on tokens, delete these tokens
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+6:   "completed": false
+
+
+An error occurred at line: [120] in the generated java file: [C:\Users\hi\Desktop\job\tomcat8.0\work\Catalina\localhost\ROOT\org\apache\jsp\enc2_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Apr-2025 14:46:16.147 심각 [http-nio-8080-exec-14] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.enc2_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.enc2_jsp
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:131)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:62)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:171)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:375)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Apr-2025 14:46:27.610 심각 [http-nio-8080-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+The method print(boolean) in the type JspWriter is not applicable for the arguments ()
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 3 in the jsp file: /enc2.jsp
+Syntax error on tokens, delete these tokens
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+6:   "completed": false
+
+
+An error occurred at line: [120] in the generated java file: [C:\Users\hi\Desktop\job\tomcat8.0\work\Catalina\localhost\ROOT\org\apache\jsp\enc2_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+The method print(boolean) in the type JspWriter is not applicable for the arguments ()
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 3 in the jsp file: /enc2.jsp
+Syntax error on tokens, delete these tokens
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+6:   "completed": false
+
+
+An error occurred at line: [120] in the generated java file: [C:\Users\hi\Desktop\job\tomcat8.0\work\Catalina\localhost\ROOT\org\apache\jsp\enc2_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Apr-2025 14:49:33.178 심각 [http-nio-8080-exec-21] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+The method print(boolean) in the type JspWriter is not applicable for the arguments ()
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 3 in the jsp file: /enc2.jsp
+Syntax error on tokens, delete these tokens
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+6:   "completed": false
+
+
+An error occurred at line: [120] in the generated java file: [C:\Users\hi\Desktop\job\tomcat8.0\work\Catalina\localhost\ROOT\org\apache\jsp\enc2_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+The method print(boolean) in the type JspWriter is not applicable for the arguments ()
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 3 in the jsp file: /enc2.jsp
+Syntax error on tokens, delete these tokens
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+6:   "completed": false
+
+
+An error occurred at line: [120] in the generated java file: [C:\Users\hi\Desktop\job\tomcat8.0\work\Catalina\localhost\ROOT\org\apache\jsp\enc2_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Apr-2025 15:33:16.024 심각 [http-nio-8080-exec-26] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+The method print(boolean) in the type JspWriter is not applicable for the arguments ()
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 3 in the jsp file: /enc2.jsp
+Syntax error on tokens, delete these tokens
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+6:   "completed": false
+
+
+An error occurred at line: [120] in the generated java file: [C:\Users\hi\Desktop\job\tomcat8.0\work\Catalina\localhost\ROOT\org\apache\jsp\enc2_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+The method print(boolean) in the type JspWriter is not applicable for the arguments ()
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 3 in the jsp file: /enc2.jsp
+Syntax error on tokens, delete these tokens
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+6:   "completed": false
+
+
+An error occurred at line: [120] in the generated java file: [C:\Users\hi\Desktop\job\tomcat8.0\work\Catalina\localhost\ROOT\org\apache\jsp\enc2_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Apr-2025 15:35:32.689 심각 [http-nio-8080-exec-27] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+The method print(boolean) in the type JspWriter is not applicable for the arguments ()
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 3 in the jsp file: /enc2.jsp
+Syntax error on tokens, delete these tokens
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+6:   "completed": false
+
+
+An error occurred at line: [120] in the generated java file: [C:\Users\hi\Desktop\job\tomcat8.0\work\Catalina\localhost\ROOT\org\apache\jsp\enc2_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+The method print(boolean) in the type JspWriter is not applicable for the arguments ()
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 3 in the jsp file: /enc2.jsp
+Syntax error on tokens, delete these tokens
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+6:   "completed": false
+
+
+An error occurred at line: [120] in the generated java file: [C:\Users\hi\Desktop\job\tomcat8.0\work\Catalina\localhost\ROOT\org\apache\jsp\enc2_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Apr-2025 15:44:42.423 심각 [http-nio-8080-exec-28] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+The method print(boolean) in the type JspWriter is not applicable for the arguments ()
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 3 in the jsp file: /enc2.jsp
+Syntax error on tokens, delete these tokens
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+6:   "completed": false
+
+
+An error occurred at line: [120] in the generated java file: [C:\Users\hi\Desktop\job\tomcat8.0\work\Catalina\localhost\ROOT\org\apache\jsp\enc2_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+The method print(boolean) in the type JspWriter is not applicable for the arguments ()
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+
+
+An error occurred at line: 3 in the jsp file: /enc2.jsp
+Syntax error on tokens, delete these tokens
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%>
+2: <%={
+3:   "userId": 1,
+4:   "id": 1,
+5:   "title": "delectus aut autem",
+6:   "completed": false
+
+
+An error occurred at line: [120] in the generated java file: [C:\Users\hi\Desktop\job\tomcat8.0\work\Catalina\localhost\ROOT\org\apache\jsp\enc2_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Apr-2025 15:51:16.422 심각 [http-nio-8080-exec-22] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%> <%
+2: request.setCharacterEncoding("utf-8") String name =request.getParameter("name"); %>
+3: <%="?븞?뀞?븯?꽭?슂..."+name %> <%="enc2.jsp?엯?땲?떎.."%>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%> <%
+2: request.setCharacterEncoding("utf-8") String name =request.getParameter("name"); %>
+3: <%="?븞?뀞?븯?꽭?슂..."+name %> <%="enc2.jsp?엯?땲?떎.."%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Apr-2025 15:51:30.472 심각 [http-nio-8080-exec-30] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%> <%
+2: request.setCharacterEncoding("utf-8") String name =request.getParameter("name"); %>
+3: <%="?븞?뀞?븯?꽭?슂..."+name %> <%="enc2.jsp?엯?땲?떎.."%>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%> <%
+2: request.setCharacterEncoding("utf-8") String name =request.getParameter("name"); %>
+3: <%="?븞?뀞?븯?꽭?슂..."+name %> <%="enc2.jsp?엯?땲?떎.."%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Apr-2025 15:51:33.960 심각 [http-nio-8080-exec-24] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.enc2_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.enc2_jsp
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:131)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:62)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:171)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:375)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Apr-2025 15:52:25.588 심각 [http-nio-8080-exec-27] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%> <%
+2: request.setCharacterEncoding("utf-8") String name =request.getParameter("name"); %>
+3: <%="?븞?뀞?븯?꽭?슂..."+name %> <%="enc2.jsp?엯?땲?떎.."%>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%> <%
+2: request.setCharacterEncoding("utf-8") String name =request.getParameter("name"); %>
+3: <%="?븞?뀞?븯?꽭?슂..."+name %> <%="enc2.jsp?엯?땲?떎.."%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Apr-2025 15:54:46.470 심각 [http-nio-8080-exec-23] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%> <%
+2: request.setCharacterEncoding("utf-8") String name =request.getParameter("name"); %>
+3: <%="?븞?뀞?븯?꽭?슂..."+name %> <%="enc2.jsp?엯?땲?떎.."%>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /enc2.jsp
+Syntax error, insert ";" to complete Statement
+1: <%@page language="java" contentType = "text/html; charset = EUC-KR" pageEncoding="EUC-KR"%> <%
+2: request.setCharacterEncoding("utf-8") String name =request.getParameter("name"); %>
+3: <%="?븞?뀞?븯?꽭?슂..."+name %> <%="enc2.jsp?엯?땲?떎.."%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1152)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+

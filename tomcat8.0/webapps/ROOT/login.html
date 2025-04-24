@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <script>
+         var httpRequest = null
+
+         function getXMLHttpRequest() {
+            if (window.ActiveXObject) {
+               var objectNames = [
+                  'MSXML2.XMLHTTP.5.0',
+                  'MSXML2.XMLHTTP.4.0',
+                  'MSXML2.XMLHTTP.3.0',
+                  'MSXML2.XMLHTTP',
+                  'Microsoft.XMLHTTP',
+               ]
+               for (var i = 0; i < objectNames.length; i++) {
+                  try {
+                     return new ActiveXObject(objectNames[i])
+                     break
+                  } catch (e) {}
+               }
+               return null
+            } else if (window.XMLHttpRequest) {
+               try {
+                  return new XMLHttpRequest()
+               } catch (e) {
+                  return null
+               }
+            }
+            return null
+         }
+         function doConnect(url) {
+            fetch('http://localhost:8080/' + url)
+               .then((response) => response.json())
+               .then((json) => {
+                  var ss = json
+                  var sid = document.getElementById('id')
+                  var spwd = document.getElementById('password')
+                  const user = ss.find((s) => s.id == sid.value)
+                  if (!user) {
+                     alert('아이디가 틀렸습니다!')
+                  } else if (user.password != spwd.value) {
+                     alert('비밀번호가 틀렸습니다!')
+                  } else {
+                     alert('로그인 성공')
+                  }
+               })
+         }
+         // function cbConnect() {
+         //    if (httpRequest.readyState == 4) {
+         //       if (httpRequest.status == 200) {
+         //          var s = httpRequest.responseText
+         //          var ss = JSON.parse(s)
+         //          var sid = document.getElementById('id')
+         //          var spwd = document.getElementById('password')
+         //          const user = ss.find((s) => s.id == sid.value)
+         //          if (!user) {
+         //             alert('아이디가 틀렸습니다!')
+         //          } else if (user.password != spwd.value) {
+         //             alert('비밀번호가 틀렸습니다!')
+         //          } else {
+         //             alert('로그인 성공')
+         //          }
+         //       } else {
+         //          alert('실패: ' + httpRequest.status)
+         //       }
+         //    }
+         // }
+      </script>
+   </head>
+   <body>
+      <form id="loginf">
+         <table>
+            <tr>
+               <td><label for="id">계정</label></td>
+               <td><input type="text" id="id" name="id" /></td>
+            </tr>
+            <tr>
+               <td><label for="passwd">패스워드</label></td>
+               <td><input type="password" id="password" name="password" /></td>
+            </tr>
+            <tr>
+               <td>
+                  <input
+                     type="button"
+                     id="loginb"
+                     name="loginb"
+                     value="로그인"
+                     onclick="doConnect('user.json')"
+                  />
+               </td>
+               <td><div id="result"></div></td>
+            </tr>
+         </table>
+      </form>
+   </body>
+</html>
