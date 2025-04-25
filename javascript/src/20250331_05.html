@@ -1,0 +1,18 @@
+<body>
+    <script>
+      let arr = new Array();    // arr = []와 같음
+      arr[0] = 23;
+      arr[1] = 12;
+      arr[2] = 34;
+      // 같은 내용을 한줄로...(배열 초기화)
+      arr = [23, 12, 34];
+
+      let sum = 0;
+      for (let i = 0; i < arr.length; i++){
+        document.write(`arr[${i}] = ${arr[i]}<hr>`); 
+        // ${} -> ``백틱(?)으로 감싸야 동작됨
+        sum = sum + arr[i];
+      }
+      document.write(`배열을 더한 값은 ${sum}`);
+    </script>
+  </body>
