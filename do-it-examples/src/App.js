@@ -43,6 +43,19 @@ function List() {
       )
    })
 }
+
+class Developer {
+   constructor(firstName, lastName) {
+      this.firstName = firstName
+      this.lastName = lastName
+   }
+   getName() {
+      const date = new Date().toLocaleTimeString()
+      return this.firstName + ' ' + this.lastName + '( ' + date + ' )'
+   }
+}
+const robin = new Developer('Robin', 'Wieruch')
+
 function App() {
    let names = ['아 이 디', '비밀번호', '로그인', '다시입력']
    const tableStyle = {
@@ -62,14 +75,18 @@ function App() {
    return (
       <div className="App">
          <div>
+            <h1>{robin.getName()}</h1>
+         </div>
+         <div>
             <h1>
                {welcome.greeting}&nbsp;
                {welcome.title}
             </h1>
             <hr /> <h1>안녕 {getTitle('리액트')}</h1>
          </div>
+         <hr />
          <List />
-         {/* <header className="App-header">
+         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <p>
                Edit <code>src/App.js</code> and save to reload.
@@ -82,7 +99,7 @@ function App() {
             >
                리액트 배우기
             </a>
-         </header> */}
+         </header>
 
          <form action="home.html" method="get">
             <table border="1" align="center" style={tableStyle}>
