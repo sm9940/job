@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Hello Ajax</title>
+      <script>
+         var httpRequest = null
+
+         function getXMLHttpRequest() {
+            if (window.ActiveXObject) {
+               var objectNames = [
+                  'MSXML2.XMLHTTP.5.0',
+                  'MSXML2.XMLHTTP.4.0',
+                  'MSXML2.XMLHTTP.3.0',
+                  'MSXML2.XMLHTTP',
+                  'Microsoft.XMLHTTP',
+               ]
+               for (var i = 0; i < objectNames.length; i++) {
+                  try {
+                     return new ActiveXObject(objectNames[i])
+                     break
+                  } catch (e) {}
+               }
+               return null
+            } else if (window.XMLHttpRequest) {
+               try {
+                  return new XMLHttpRequest()
+               } catch (e) {
+                  return null
+               }
+            }
+            return null
+         }
+         function doConnect(url) {
+            var name = document.getElementById('names')
+            console.log(name)
+            url = url + '?name=' + name.value
+            fetch(url)
+               .then((response) => {
+                  return response.json()
+               })
+               .then((data) => {
+                  console.log(data)
+                  alert('응답데이터: ' + data.name + ' 와 ' + data.age)
+                  document.getElementById('name').innerHTML = data.name
+                  document.getElementById('age').innerHTML = data.age
+                  document.getElementById('items').innerHTML = data.items
+               })
+               .catch((error) => console.error('에러발생 :: ', error))
+
+            // .then((json) => {
+            //    alert
+            // })
+            // .then((body) => console.log(body))
+
+            // .then((response) => alert(String(response)))
+            // .then((response) => alert(reponse))
+         }
+      </script>
+   </head>
+   <body>
+      <table border="1" cellpadding="5">
+         <tr align="center">
+            <td colspan="4">
+               <input type="text" id="names" />
+               <input type="button" value="읽어오기" onclick="doConnect('b.jsp')" />
+            </td>
+         </tr>
+         <tr align="center">
+            <td id="name">1</td>
+            <td id="age">2</td>
+            <td id="items">3</td>
+         </tr>
+      </table>
+   </body>
+</html>

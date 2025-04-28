@@ -1,0 +1,16 @@
+1. Web Client -> chrome(browser)
+2. JavaScript -> Programming + Web
+3. Python -> Programming(trend)
+4. REST, JS기반의 프레임워크(node.js) - 2+3
+- Web Server (apache,tomcat,node Server)
+- apache(WEB) -> CGI - 보안문제가 심함
+- tomcat/node server(WA) - 보안문제 해결? 
+- node server(WA) -> 개발자가 서버테스트를 할 수 있도록 가벼운 서버를 지원 프레임워크 vs. 플랫폼(원스톱 서비스)
+5. React -> complie(Babel language)
+- C,C++,JAVA ,C# ->컴파일언어
+
+WebClient : chrome -> Web request -> tomcat: WebServer> localhos:8080/a.html  <-web response   a.html
+                                                            사용자 event     -> web request -> target 존재(b.jsp)
+                                                                               (action,method) 
+                                                        client page <- web response <- b.jsp 실행(html 동적 생성)                       
+                                                        client page <- web response <- b.jsp 실행(json 동적 생성)                       

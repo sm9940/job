@@ -112,3 +112,8 @@
 22-Apr-2025 14:46:07.692 정보 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/docs]
 22-Apr-2025 14:46:07.692 정보 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] has started
 22-Apr-2025 14:46:07.702 정보 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] is completed
+28-Apr-2025 10:53:55.511 정보 [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+28-Apr-2025 10:53:55.564 정보 [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+28-Apr-2025 10:53:55.614 정보 [Thread-6] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+28-Apr-2025 10:53:55.681 정보 [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+28-Apr-2025 10:53:55.681 정보 [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
