@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import Login from './login'
+import Login from './20250428'
+import Tues from './20250429'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
    <div>
       <React.StrictMode>
          <App />
       </React.StrictMode>
-      <Login />
+      {/* <Login /> */}
+      {/* <Tues /> */}
    </div>
 )
 
