@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <title>TODO List (HTML with Drag)</title>
+      <style>
+         body {
+            font-family: sans-serif;
+            background: #fff;
+            padding: 20px;
+         }
+         h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+         }
+         .input-container {
+            display: flex;
+            margin-bottom: 20px;
+         }
+         input[type='text'] {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+         }
+         button.add-button {
+            background: #0b3861;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+         }
+         ul {
+            list-style: none;
+            padding: 0;
+         }
+         li.todo-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 8px;
+            cursor: move;
+         }
+         span.todo-text {
+            font-size: 18px;
+            margin-left: 10px;
+         }
+         span.completed {
+            text-decoration: line-through;
+            color: #999;
+         }
+         button.delete-button {
+            margin-left: auto;
+            background: #8a0808;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+         }
+         .drag-over {
+            border: 2px dashed #007bff;
+         }
+      </style>
+   </head>
+   <body>
+      <h1>TODO</h1>
+      <div class="input-container">
+         <input type="text" id="newTodo" placeholder="할일을 입력하세요." />
+         <button class="add-button" onclick="addTodo()">등록</button>
+      </div>
+      <ul id="todoList"></ul>
+
+      <script>
+         let todoItems = []
+
+         function addTodo() {
+            const input = document.getElementById('newTodo')
+            const text = input.value.trim()
+            if (!text) return
+
+            const newItem = {
+               id: Date.now(),
+               text,
+               completed: false,
+            }
+
+            todoItems.push(newItem)
+            input.value = ''
+            renderList()
+         }
+
+         function toggleTodo(id) {
+            todoItems = todoItems.map((item) =>
+               item.id === id ? { ...item, completed: !item.completed } : item
+            )
+            renderList()
+         }
+
+         function deleteTodo(id) {
+            todoItems = todoItems.filter((item) => item.id !== id)
+            renderList()
+         }
+
+         function renderList() {
+            const list = document.getElementById('todoList')
+            list.innerHTML = ''
+            todoItems.forEach((item, index) => {
+               const li = document.createElement('li')
+               li.className = 'todo-item'
+               li.setAttribute('draggable', 'true')
+               li.setAttribute('data-index', index)
+
+               const checkbox = document.createElement('input')
+               checkbox.type = 'checkbox'
+               checkbox.checked = item.completed
+               checkbox.onchange = () => toggleTodo(item.id)
+
+               const span = document.createElement('span')
+               span.className = 'todo-text' + (item.completed ? ' completed' : '')
+               span.textContent = item.text
+
+               const delBtn = document.createElement('button')
+               delBtn.className = 'delete-button'
+               delBtn.textContent = '삭제하기'
+               delBtn.onclick = () => deleteTodo(item.id)
+
+               li.appendChild(checkbox)
+               li.appendChild(span)
+               li.appendChild(delBtn)
+
+               li.addEventListener('dragstart', onDragStart)
+               li.addEventListener('dragover', onDragOver)
+               li.addEventListener('drop', onDrop)
+
+               list.appendChild(li)
+            })
+         }
+
+         let draggedIndex = null
+
+         function onDragStart(e) {
+            draggedIndex = e.target.dataset.index
+         }
+
+         function onDragOver(e) {
+            e.preventDefault()
+            e.target.classList.add('drag-over')
+         }
+
+         function onDrop(e) {
+            e.preventDefault()
+            const targetIndex = e.target.closest('li').dataset.index
+            if (draggedIndex === null || targetIndex === null) return
+            const draggedItem = todoItems[draggedIndex]
+            todoItems.splice(draggedIndex, 1)
+            todoItems.splice(targetIndex, 0, draggedItem)
+            draggedIndex = null
+            renderList()
+         }
+      </script>
+   </body>
+</html>
