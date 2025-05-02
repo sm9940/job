@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals'
 import Login from './20250428'
 import Tues from './20250429'
 import Weds from './20250430'
+import Thurs from './20250501'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
    <div>
       <React.StrictMode>
-         <Weds />
+         <Thurs />
       </React.StrictMode>
       {/* <Login /> */}
       {/* <Tues /> */}

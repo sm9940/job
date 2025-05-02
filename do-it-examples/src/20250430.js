@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react'
 import logo from './logo.svg'
 import './App.css'
@@ -42,7 +42,7 @@ const App = () => {
 
    const Search = (props) => {
       //객체 데이터에 대한 getter/setter를 만든다.
-      const [searchTerm, setSearchTerm] = React.useState('')
+      const [searchTerm, setSearchTerm] = useState('')
       //이벤트기반의 생명주기를 가지도록 만든다.
       const handleChange = (event) => {
          // setSearchTerm(event.target.value);

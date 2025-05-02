@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         class MyDate {
+            constructor(year, month, day) {
+               // 기본 유효성 검사
+               this.year = year > 0 ? year : 1
+               this.month = month < 1 ? 1 : month > 12 ? 12 : month
+
+               // 일수 계산 전 임시 year/month 세팅
+               const tempYear = this.year
+               const tempMonth = this.month
+
+               const maxDay = this.getDaysInMonth(tempYear, tempMonth)
+               this.day = day > maxDay ? maxDay : day < 1 ? 1 : day
+            }
+
+            isLeapYear() {
+               return (this.year % 4 === 0 && this.year % 100 !== 0) || this.year % 400 === 0
+            }
+
+            getDaysInMonth(year, month) {
+               if ([1, 3, 5, 7, 8, 10, 12].includes(month)) return 31
+               if ([4, 6, 9, 11].includes(month)) return 30
+               if (month === 2) return this.isLeapYear() ? 29 : 28
+               return 0 // 잘못된 월
+            }
+
+            print() {
+               const leap = this.isLeapYear() ? '윤년' : '평년'
+               document.write(`${this.year}-${this.month}-${this.day} : ${leap}`)
+               document.write('|||||')
+            }
+         }
+         new MyDate(-12313, 0, 0).print() // 1-1-1 | 평년
+         new MyDate(2024, 2, 30).print() // 2024-2-29 | 윤년
+         new MyDate(2023, 12312312, 999).print() // 2023-1-31 | 평년
+         new MyDate(2023, 13, -100).print() // 2023-12-1 | 평년
+      </script>
+   </body>
+</html>
