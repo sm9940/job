@@ -8,11 +8,11 @@ import Header from './component/header'
 import Footer from './component/footer'
 import Product from './component/product'
 import NotFound from './component/notFound'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-   <BrowserRouter>
+   <Router>
       <Header />
       <Routes>
          <Route path="/" element={<Main />}></Route>
@@ -20,7 +20,7 @@ root.render(
          <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <Footer />
-   </BrowserRouter>
+   </Router>
 )
 
 // If you want to start measuring performance in your app, pass a function
