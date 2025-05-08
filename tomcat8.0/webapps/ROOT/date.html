@@ -27,7 +27,7 @@
       <script>
          class MyDate {
             constructor(year, month, day) {
-               this.year = year > 0 ? year : 1
+               this.year = year !== 0 ? year : 1
                this.month = month < 1 ? 1 : month > 12 ? 12 : month
 
                const tempYear = this.year
@@ -36,7 +36,27 @@
 
                this.day = day > maxDay ? maxDay : day < 1 ? 1 : day
             }
+            getYear(){
+               return this.year
+            }
+            
+            getMonth(){
+               return this.month
+            }
+            
+            getDay(){
+               return this.day
+            }
 
+            setYear(year){
+               this.year = year !== 0 ? year : 1
+            }
+            setMonth(month){
+               this.month = month < 1 ? 1 : month > 12 ? 12 : month
+            }
+            setDay(day){
+               this.day = day > maxDay ? maxDay : day < 1 ? 1 : day
+            }
             isLeapYear() {
                return (this.year % 4 === 0 && this.year % 100 !== 0) || this.year % 400 === 0
             }
