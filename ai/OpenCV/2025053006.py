@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import numpy as np
 import cv2
 
@@ -25,3 +26,32 @@ print("count {}".format(len(b)))
 cv2.imshow("Canny", canny)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+=======
+import numpy as np
+import cv2
+
+image = cv2.imread("coin.jpg")
+cv2.imshow("Original", image)
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.imshow("Gray", gray)
+gray = cv2.GaussianBlur(gray, (5,5), 0)
+lap = cv2.Laplacian(gray, cv2.CV_64F)
+lap = np.uint8(np.absolute(lap))
+cv2.imshow("Laplacian", lap)
+sobelX = cv2.Sobel(gray, cv2.CV_64F, 1, 0)
+sobelY = cv2.Sobel(gray, cv2.CV_64F, 0, 1)
+sobelX = np.uint8(np.absolute(sobelX))
+sobelY = np.uint8(np.absolute(sobelY))
+sobelCombind = cv2.bitwise_or(sobelX, sobelY)
+cv2.imshow("Sobel X", sobelX)
+cv2.imshow("Sobel Y", sobelY)
+cv2.imshow("Sobel Combinded", sobelCombind)
+
+canny = cv2.Canny(gray, 30, 150)
+(counts, b) = cv2.findContours(canny.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+print("count {}".format(len(counts)))
+print("count {}".format(len(b)))
+cv2.imshow("Canny", canny)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+>>>>>>> origin

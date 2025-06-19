@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CUDA Toolkit 11.3과 호환 cuDNN 8.3.0 다운로드
 
 conda install python==3.8
@@ -7,3 +8,14 @@ conda install tensorflow-gpu==2.3.0
 conda create -name tensorflow python=3
 
 conda activate tensorflow
+=======
+CUDA Toolkit 11.3과 호환 cuDNN 8.3.0 다운로드
+
+conda install python==3.8
+
+conda install tensorflow-gpu==2.3.0
+
+conda create -name tensorflow python=3
+
+conda activate tensorflow
+>>>>>>> origin
